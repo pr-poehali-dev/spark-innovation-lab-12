@@ -5,21 +5,27 @@ import { Quote } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "Быстро и результативно! Искал логотип, который идеально представит мой бизнес, и CodeCraft меня не разочаровали. :)",
-    name: "Патрик",
-    role: "Предприниматель",
+      "Организация на высшем уровне! Сетка, судейство, трансляция — всё работало без единого сбоя. WTG знает, как делать настоящие турниры.",
+    name: "Артём",
+    role: "Капитан команды Phantom",
   },
   {
     quote:
-      "Для нашего фонда мы хотели полностью обновить старый сайт и автоматизировать множество ручных задач. CodeCraft создал для нас отличный продукт, полностью под наши нужды, с программным обеспечением, которое избавило нас от рутины.",
-    name: "Мехмет",
-    role: "Председатель НКО",
+      "Участвовали в WTG Amateur League всем составом — это лучший способ прокачать командную игру. Регулярные матчи, чёткое расписание и никакого читерства.",
+    name: "Влад",
+    role: "Игрок, команда NoName Crew",
   },
   {
     quote:
-      "Для нового бизнеса мне нужен был красивый свежий сайт как визитная карточка. Теперь у меня потрясающий и быстрый сайт, который еще и отлично индексируется в Google! Просто супер.",
-    name: "Юрий",
-    role: "Предприниматель",
+      "LAN-турнир от WTG — это вообще огонь. Атмосфера, организация, призы — всё на уровне. Ждём следующего оффлайна!",
+    name: "Максим",
+    role: "Участник WTG LAN Cup 2024",
+  },
+  {
+    quote:
+      "Регистрация простая, поддержка отвечает быстро, результаты матчей приходят сразу. WTG — это про уважение к игрокам.",
+    name: "Дима",
+    role: "Постоянный участник турниров WTG",
   },
 ]
 
@@ -56,15 +62,14 @@ export function TestimonialsSection() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          Что говорят наши клиенты
+          Что говорят участники
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed">
-          Как всегда, качество для нас на первом месте. Кроме того, мы стремимся к максимальной прозрачности, чтобы клиенты точно знали, что получат.
+          Честные отзывы игроков и команд, которые уже стали частью WTG-сообщества.
         </p>
 
         <div className="relative">
           <div ref={scrollRef} className="flex gap-6 overflow-x-hidden" style={{ scrollBehavior: "auto" }}>
-            {/* Duplicate testimonials for seamless loop */}
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <Card key={index} className="flex-shrink-0 w-[90vw] sm:w-[450px] border-none shadow-lg">
                 <CardContent className="p-8">

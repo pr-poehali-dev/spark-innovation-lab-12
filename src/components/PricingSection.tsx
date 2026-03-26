@@ -4,39 +4,42 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Solo",
+    price: "499",
+    period: "/ участник",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "Участие в онлайн-турнире",
+      "Групповая стадия + плей-офф",
+      "Онлайн-трансляция матчей",
+      "Сертификат участника",
+      "Поддержка судьи",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Team",
+    price: "1 990",
+    period: "/ команда",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "Участие командой до 5 игроков",
+      "Приоритетный посев в сетке",
+      "Хайлайты лучших моментов",
+      "Медаль для каждого игрока",
+      "Расширенная поддержка",
+      "Доступ в закрытый Discord",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Pro",
     price: "По запросу",
+    period: "",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
+      "Участие в Pro Series",
+      "LAN-мероприятия",
       "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Спонсорская интеграция",
+      "Медиа-поддержка команды",
     ],
     highlighted: false,
   },
@@ -57,13 +60,13 @@ export function PricingSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Прозрачные цены
+            Участие в турнирах
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выбери <span className="text-primary">свой формат</span> участия
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Для одиночных игроков, команд и профессиональных организаций
           </p>
         </div>
 
@@ -90,9 +93,8 @@ export function PricingSection() {
                       <span className="text-3xl">{tier.price}</span>
                     ) : (
                       <>
-                        <span className="text-lg font-normal text-muted-foreground">от </span>
                         {tier.price}
-                        <span className="text-lg font-normal text-muted-foreground"> ₽</span>
+                        <span className="text-lg font-normal text-muted-foreground"> ₽ {tier.period}</span>
                       </>
                     )}
                   </span>
@@ -112,7 +114,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Связаться с нами" : "Зарегистрироваться"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -121,8 +123,8 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Все форматы включают <span className="text-primary font-semibold">честное судейство</span> и{" "}
+            <span className="text-primary font-semibold">поддержку организаторов</span>
           </p>
         </div>
       </div>

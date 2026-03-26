@@ -1,27 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Lightbulb, PaletteIcon, Rocket, ArrowRight } from "lucide-react"
+import { ClipboardList, Swords, Medal, ArrowRight } from "lucide-react"
 import { Fragment } from "react"
 
 const steps = [
   {
-    icon: Lightbulb,
-    title: "Концепция и планирование",
+    icon: ClipboardList,
+    title: "Регистрация",
     description:
-      "Вместе обсуждаем вашу идею, цели и видение сайта. Разрабатываем четкий план, соответствующий вашим пожеланиям, с правильной структурой и функциональностью.",
+      "Заполни заявку на участие, выбери формат и оплати взнос. Тебе придёт подтверждение с датой, расписанием и инструкцией для подключения к серверам.",
     number: "01",
   },
   {
-    icon: PaletteIcon,
-    title: "Разработка и дизайн",
+    icon: Swords,
+    title: "Матчи и сетка",
     description:
-      "Наши разработчики и дизайнеры приступают к созданию сайта. Фокусируемся на стильном дизайне, удобном для пользователей и технически безупречном.",
+      "Играй по расписанию против соперников своего уровня. Судьи контролируют честность, а результаты обновляются в реальном времени в открытой турнирной сетке.",
     number: "02",
   },
   {
-    icon: Rocket,
-    title: "Тестирование и запуск",
+    icon: Medal,
+    title: "Награждение",
     description:
-      "Тщательно тестируем сайт для обеспечения оптимальной производительности. После вашего одобрения запускаем проект и остаемся на связи для поддержки.",
+      "Победители получают призовые, трофеи и медали. Все участники — сертификат и хайлайты своих лучших моментов. Лучшие попадают в рейтинг WTG.",
     number: "03",
   },
 ]
@@ -34,13 +34,13 @@ export function ProcessSection() {
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-            Наш процесс
+            Как это работает
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            От <span className="text-primary">идеи</span> к <span className="text-primary">результату</span>
+            От <span className="text-primary">заявки</span> до <span className="text-primary">победы</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            В три простых шага превращаем вашу идею в мощное онлайн-присутствие, приносящее результат.
+            Три простых шага, чтобы стать участником турнира WTG и побороться за призы.
           </p>
         </div>
 

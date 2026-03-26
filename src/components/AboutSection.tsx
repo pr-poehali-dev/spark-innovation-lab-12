@@ -2,18 +2,18 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
 
 const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+  { title: "Честная игра", description: "Строгий контроль матчей и нулевая терпимость к читерству" },
+  { title: "Доступность", description: "Турниры для игроков любого уровня — от новичков до профи" },
+  { title: "Прозрачность", description: "Открытые правила, сетки и результаты в реальном времени" },
+  { title: "Сообщество", description: "Растущая база игроков и команд по всей России" },
+  { title: "Масштаб", description: "От онлайн-кубков до крупных LAN-мероприятий" },
+  { title: "Оперативность", description: "Быстрое разрешение споров и поддержка участников 24/7" },
 ]
 
 const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
+  { number: "50+", label: "Турниров" },
+  { number: "1000+", label: "Участников" },
+  { number: "200+", label: "Команд" },
   { number: "3+", label: "Года опыта" },
 ]
 
@@ -27,19 +27,19 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
             <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            О WTG
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Качество, которое{" "}
+            Киберспорт, который{" "}
             <span className="text-primary relative">
-              впечатляет
+              объединяет
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                 <path d="M0 4C50 2 150 6 200 4" stroke="currentColor" strokeWidth="2" className="text-primary" />
               </svg>
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            WTG — это больше, чем турниры. Мы создаём пространство, где каждый игрок может проверить себя, найти команду и стать частью настоящего CS2-сообщества.
           </p>
         </div>
 
